@@ -1,0 +1,879 @@
+{
+  "cases": [
+    {
+      "case": 1,
+      "slide": "SPA119",
+      "spot": "010x016",
+      "label": "肿瘤／间质／炎症混合",
+      "route": 0,
+      "reason": 0,
+      "max_solver_residual": 6.31497737965952e-15,
+      "selected_shape": [
+        64,
+        64
+      ],
+      "png": "case_1_SPA119_010x016.png"
+    },
+    {
+      "case": 2,
+      "slide": "SPA124",
+      "spot": "010x014",
+      "label": "脂肪／间质混合",
+      "route": 0,
+      "reason": 0,
+      "max_solver_residual": 5.620517434287572e-15,
+      "selected_shape": [
+        64,
+        64
+      ],
+      "png": "case_2_SPA124_010x014.png"
+    },
+    {
+      "case": 3,
+      "slide": "SPA119",
+      "spot": "014x034",
+      "label": "中心分割为背景，使用周围场",
+      "route": 1,
+      "reason": 1,
+      "max_solver_residual": 2.4150122279408066e-15,
+      "selected_shape": [
+        224,
+        224
+      ],
+      "png": "case_3_SPA119_014x034.png"
+    },
+    {
+      "case": 4,
+      "slide": "SPA124",
+      "spot": "003x016",
+      "label": "中心组织被拓扑排除，使用周围场",
+      "route": 1,
+      "reason": 2,
+      "max_solver_residual": 6.394095802153194e-15,
+      "selected_shape": [
+        224,
+        224
+      ],
+      "png": "case_4_SPA124_003x016.png"
+    }
+  ],
+  "source_metadata": [
+    {
+      "slide": "SPA119",
+      "spot": "010x016",
+      "candidate_path": "/home/liuyu/TRIPLEX/input/ST/andersson/mechanics_fem_center_first_context_fallback_candidate_20261001/SPA119.h5",
+      "candidate_row": 6,
+      "route": 0,
+      "reason": 0,
+      "source_h5": "/home/liuyu/TRIPLEX/input/ST/andersson/mechanics_fem_v5_strict_circle_0p50_candidate_20260923/shards/SPA119_0000_0031/tmeseg_9class_modelscale_0p50_imagenet_20260923/tmeseg_dual_sed_extraction_v1_20260915/domain_7x7/grid_32cpt/SPA119.h5",
+      "source_row": 6,
+      "formal_acceptance_pass": 0,
+      "mechanics_available": 0,
+      "attrs": {
+        "acceptance_field": "explicitly_selected_extraction_variant_sed_roi; raw_SED retained as physical-scale diagnostic",
+        "cells_per_tile": 32,
+        "complete": true,
+        "constitutive_model": "2D_small_strain_isotropic_linear_elastic_plane_stress_CST",
+        "domain_definition": "7x7_TRIPLEX_visual_tiles_native_level0_no_resizing",
+        "domain_tiles": 7,
+        "edge_policy": "shift_full_native_domain_inside_WSI_without_padding_or_resizing; preserve actual spot centre and record domain offset",
+        "element_formulation": "Q4_bilinear_quadrilateral_2x2_Gauss_plane_stress",
+        "extraction_config_path": "/opt/data/private/users/liuyu/FEM/CrowdsourcingDataset-Amgadetal2019/tools/fem/fem_extraction_variants_tmeseg_v1_20260915.yaml",
+        "extraction_config_sha256": "76333b6d280a1704f86383e4607268c802109aef7ef88d47bf597a34c6f5f294",
+        "extraction_output_size": 64,
+        "extraction_protocol_id": "tmeseg_dual_sed_extraction_v1_20260915",
+        "extraction_variant_names": "[\"triplex_rect_full_domain_rank\", \"strict_circle_center_mean\"]",
+        "failure_count": 0,
+        "fem_core_sha256": "5ffd0f3a661ae24a4e72de0497dd3449a5e33bb0fd699777aa64ffca63e66bcb",
+        "fem_script_path": "/opt/data/private/users/liuyu/FEM/CrowdsourcingDataset-Amgadetal2019/tools/fem/run_spot_local_fem_v2_validation.py",
+        "fem_script_sha256": "cdec552261f59e582803c9abd335c04874a2ecd1bc63ca1993fb9b2218b94c8a",
+        "fem_solution_reuse": false,
+        "h5ad_path": "/home/liuyu/TRIPLEX/input/ST/andersson/st/SPA119.h5ad",
+        "h5ad_sha256": "bf998349590a3459ca7ac62f59c6b60d474f62ea21f331071619593abca3f113",
+        "input_resampling": "none",
+        "load_basis": "[\"xx\", \"yy\", \"xy\"]",
+        "load_basis_equal_frobenius_norm": true,
+        "material_class_id_legend": "{\"0\": \"void_background\", \"1\": \"tumour_cell_rich\", \"2\": \"fibrous_stroma\", \"3\": \"mixed_inflammatory_infiltrate\", \"4\": \"tumour_necrosis_debris\", \"5\": \"breast_adipose\", \"6\": \"breast_parenchyma\", \"7\": \"vessel_composite\", \"8\": \"blood_fluid_unsupported\"}",
+        "material_config_path": "/opt/data/private/users/liuyu/FEM/CrowdsourcingDataset-Amgadetal2019/tools/fem/material_config_breast_tmeseg_v5_0p50_20260923.yaml",
+        "material_config_sha256": "344c83e16df1170b77ca3f1c9800ae363ae7f8cf8c5bb2165a5bb0dc7caf8084",
+        "material_evidence_level_id_legend": "{\"0\": \"not_a_material\", \"1\": \"A_direct_human_breast_AFM\", \"2\": \"A_B_human_breast_fibrous_region\", \"3\": \"C_human_single_cell_proxy_not_region_measurement\", \"4\": \"C_D_directional_no_direct_human_breast_necrosis_modulus\", \"5\": \"A_B_direct_human_breast_small_strain\", \"6\": \"A_B_human_fibroglandular_proxy_for_parenchyma\", \"7\": \"C_D_directional_mouse_mammary_no_human_composite_modulus\", \"8\": \"unsupported_by_current_solid_solver\"}",
+        "material_mapping": "exact_fractional_native_pixel_area__voigt_with_void_zero",
+        "mechanics_available_policy": "remains_zero_until_cross-grid-domain-material-poisson-rotation_validation_passes",
+        "mesh_definition": "32_cells_per_visual_tile__224x224_cells",
+        "model_input_contract": "read only extraction_variants/strict_circle_center_mean/sed_roi; status and gate datasets are audit-only",
+        "patch_alignment": "{\"coordinate_relation\": \"patch_top_left_xy_plus_patch_size_src_over_2_equals_h5ad_spot_centre_xy\", \"maximum_centre_error_px\": 0.693108938046236, \"mean_centre_error_px\": 0.38407453575658584}",
+        "patch_size_src": 163.0,
+        "patch_size_src_source": "img.attrs/patch_size_src",
+        "production_authorized_at_run": false,
+        "protocol_id": "fem_v5_q4_strict_native_circle_0p50_candidate_20260923",
+        "scenario_names": "[\"nominal\"]",
+        "segmentation_coverage_policy": "every_pixel_in_actual_FEM_domain_must_equal_1; sentinel_255_forbidden",
+        "segmentation_labels_sha256": "9700b72e11b8ff4b399a9783b76665aa99cc96cc667eb50032abf8d496b09fd5",
+        "segmentation_model_revision": "03379365ea8267dbc0f738ee350695b3580d0a5e",
+        "segmentation_path": "/home/liuyu/FEM/CrowdsourcingDataset-Amgadetal2019/wsis/segmentation_outputs/tmeseg_breast_tcga_9class_modelscale_0p50_imagenet_20260923/masks/SPA119.h5",
+        "segmentation_protocol_config_sha256": "c34d9e133e62fd3db94605f8c6137c61144f01ec3960aaca0726770d1ddb032f",
+        "segmentation_protocol_id": "tmeseg_fem_roi_modelscale_0p50_imagenet_20260923",
+        "segmentation_source": "tmeseg_9class_modelscale_0p50_imagenet_20260923",
+        "source_mpp_authority": "OpenSlide level-0 metadata",
+        "source_mpp_x": 0.6881798619144083,
+        "source_mpp_y": 0.6881798619144083,
+        "source_wsi_path": "/home/liuyu/FEM/CrowdsourcingDataset-Amgadetal2019/wsis/SPA119.tif",
+        "source_wsi_sha256": "bd9e9efd14569091436dae7f5640077229915c52c835467f776c7fcddac39ea9",
+        "spot_diameter_level0_px": 145.50968801903866,
+        "status_codes": "{\"0\": \"solved_pending_cross_configuration_validation\", \"1\": \"input_contract_failure\", \"2\": \"no_biological_material_in_circular_spot\", \"3\": \"solver_or_numerical_qc_failure\"}",
+        "status_note": "candidate numerical solve only; not a production mechanics input",
+        "strain_amplitude": 0.01,
+        "strict_circle_gate": "native_level0_pixel_centres_before_coarse_FEM_grid; no_outside_circle_cell_leakage",
+        "topology_filter_policy": "Four-neighbour material components completely enclosed by a traction-free void cavity are excluded from the solid mesh; components contacting the exterior void or domain boundary are retained.",
+        "topology_filter_policy_id": "v3_edge_connected_material_components_v1",
+        "topology_filter_sha256": "2d1e0efcdc07dfdf6c01a50377be8dd42aba525c0fd4ec58b08a3525c7d5a709",
+        "triplex_patch_h5_path": "/home/liuyu/TRIPLEX/input/ST/andersson/patches/SPA119.h5",
+        "triplex_patch_h5_sha256": "2e3fd67765db67ea2916239ccb6a5e943a8f7189082ea4d90aaa2b7eb186b757",
+        "validation_only": true,
+        "void_boundary_definition": "true_void_excluded; affine_KUBC_on_exterior_material_boundary; enclosed_hole_boundary_traction_free",
+        "zero_sed_policy": "status_code=2 strict-native-empty or status_code=3 numerical failure retains HDF5 zero fill; it is not a physical zero-SED solution"
+      },
+      "bounds": [
+        2024,
+        3774,
+        3165,
+        4915
+      ],
+      "center_xy": [
+        2595.05,
+        4344.76
+      ],
+      "center_local_xy": [
+        571.0500000000002,
+        570.7600000000002
+      ],
+      "diameter_px": 145.50968801903866,
+      "qc_metrics": {
+        "biological_fraction_in_spot": 1.0,
+        "candidate_numerical_qc_pass": true,
+        "cross_configuration_validation_pending": true,
+        "domain_is_geometrically_centred": true,
+        "rotation_equivariance_90deg_by_extraction_variant": {
+          "strict_circle_center_mean": {
+            "integrated_sed_relative_difference": 0.0,
+            "normalized_l1": 0.0,
+            "passes": true,
+            "spearman": 1.0,
+            "top20_hotspot_dice": 1.0,
+            "valid_cells": 3226
+          },
+          "triplex_rect_full_domain_rank": {
+            "integrated_sed_relative_difference": 0.0,
+            "normalized_l1": 0.0,
+            "passes": true,
+            "spearman": 1.0,
+            "top20_hotspot_dice": 1.0,
+            "valid_cells": 4092
+          }
+        },
+        "rotation_equivariance_90deg_raw_sed_diagnostic": {
+          "integrated_sed_relative_difference": 1.1370698692771575e-14,
+          "normalized_l1": 6.29284736544926e-14,
+          "spearman": 1.0,
+          "top20_hotspot_dice": 1.0,
+          "valid_cells": 641
+        },
+        "scenarios": {
+          "nominal": {
+            "family": "nominal",
+            "loads": {
+              "xx": {
+                "energy_balance": 1.3776810230280465e-13,
+                "fixed_dofs": 1900,
+                "internal_energy": 0.00016251058472603987,
+                "nodes": 50514,
+                "reaction_balance": 1.0408669337778179e-13,
+                "solver_residual": 3.571488070439644e-15,
+                "triangles": 0
+              },
+              "xy": {
+                "energy_balance": 5.429737083963213e-13,
+                "fixed_dofs": 1900,
+                "internal_energy": 8.461379685356515e-05,
+                "nodes": 50514,
+                "reaction_balance": 1.0184667295848585e-13,
+                "solver_residual": 6.31497737965952e-15,
+                "triangles": 0
+              },
+              "yy": {
+                "energy_balance": 4.3894571212448955e-13,
+                "fixed_dofs": 1900,
+                "internal_energy": 0.00011840630904439391,
+                "nodes": 50514,
+                "reaction_balance": 2.5851290618363667e-13,
+                "solver_residual": 4.9289386834253e-15,
+                "triangles": 0
+              }
+            },
+            "poisson_ratio": 0.49
+          }
+        }
+      },
+      "topology_cells_excluded": 0,
+      "native_classes": {
+        "0": "background",
+        "1": "tumor",
+        "2": "stroma",
+        "3": "inflam",
+        "4": "necrosis",
+        "5": "fat",
+        "6": "parenchyma",
+        "7": "blood_vessel",
+        "8": "blood"
+      },
+      "native_domain_segmentation_fraction": [
+        0.012064082661933003,
+        0.31509945993527827,
+        0.5378932483076411,
+        0.13069858151397862,
+        0.0,
+        0.0038636403788057435,
+        0.0,
+        0.00038098720236334966,
+        0.0
+      ],
+      "raw_sed_nonfinite_cells": 0,
+      "raw_sed_finite_cells": 50176,
+      "native_circle_class_counts": [
+        6,
+        8034,
+        5584,
+        3012,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_circle_class_fraction": [
+        0.0003606636210627555,
+        0.48292858860302956,
+        0.3356576100024044,
+        0.18105313777350324,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "slide": "SPA124",
+      "spot": "010x014",
+      "candidate_path": "/home/liuyu/TRIPLEX/input/ST/andersson/mechanics_fem_center_first_context_fallback_candidate_20261001/SPA124.h5",
+      "candidate_row": 4,
+      "route": 0,
+      "reason": 0,
+      "source_h5": "/home/liuyu/TRIPLEX/input/ST/andersson/mechanics_fem_v5_strict_circle_0p50_candidate_20260923/shards/SPA124_0000_0031/tmeseg_9class_modelscale_0p50_imagenet_20260923/tmeseg_dual_sed_extraction_v1_20260915/domain_7x7/grid_32cpt/SPA124.h5",
+      "source_row": 4,
+      "formal_acceptance_pass": 0,
+      "mechanics_available": 0,
+      "attrs": {
+        "acceptance_field": "explicitly_selected_extraction_variant_sed_roi; raw_SED retained as physical-scale diagnostic",
+        "cells_per_tile": 32,
+        "complete": true,
+        "constitutive_model": "2D_small_strain_isotropic_linear_elastic_plane_stress_CST",
+        "domain_definition": "7x7_TRIPLEX_visual_tiles_native_level0_no_resizing",
+        "domain_tiles": 7,
+        "edge_policy": "shift_full_native_domain_inside_WSI_without_padding_or_resizing; preserve actual spot centre and record domain offset",
+        "element_formulation": "Q4_bilinear_quadrilateral_2x2_Gauss_plane_stress",
+        "extraction_config_path": "/opt/data/private/users/liuyu/FEM/CrowdsourcingDataset-Amgadetal2019/tools/fem/fem_extraction_variants_tmeseg_v1_20260915.yaml",
+        "extraction_config_sha256": "76333b6d280a1704f86383e4607268c802109aef7ef88d47bf597a34c6f5f294",
+        "extraction_output_size": 64,
+        "extraction_protocol_id": "tmeseg_dual_sed_extraction_v1_20260915",
+        "extraction_variant_names": "[\"triplex_rect_full_domain_rank\", \"strict_circle_center_mean\"]",
+        "failure_count": 0,
+        "fem_core_sha256": "5ffd0f3a661ae24a4e72de0497dd3449a5e33bb0fd699777aa64ffca63e66bcb",
+        "fem_script_path": "/opt/data/private/users/liuyu/FEM/CrowdsourcingDataset-Amgadetal2019/tools/fem/run_spot_local_fem_v2_validation.py",
+        "fem_script_sha256": "cdec552261f59e582803c9abd335c04874a2ecd1bc63ca1993fb9b2218b94c8a",
+        "fem_solution_reuse": false,
+        "h5ad_path": "/home/liuyu/TRIPLEX/input/ST/andersson/st/SPA124.h5ad",
+        "h5ad_sha256": "081f7be9ff8fa97e1cfc81cdf6f5c6b8ee1151b65aa2a24a61ddbc7fcb8e15d2",
+        "input_resampling": "none",
+        "load_basis": "[\"xx\", \"yy\", \"xy\"]",
+        "load_basis_equal_frobenius_norm": true,
+        "material_class_id_legend": "{\"0\": \"void_background\", \"1\": \"tumour_cell_rich\", \"2\": \"fibrous_stroma\", \"3\": \"mixed_inflammatory_infiltrate\", \"4\": \"tumour_necrosis_debris\", \"5\": \"breast_adipose\", \"6\": \"breast_parenchyma\", \"7\": \"vessel_composite\", \"8\": \"blood_fluid_unsupported\"}",
+        "material_config_path": "/opt/data/private/users/liuyu/FEM/CrowdsourcingDataset-Amgadetal2019/tools/fem/material_config_breast_tmeseg_v5_0p50_20260923.yaml",
+        "material_config_sha256": "344c83e16df1170b77ca3f1c9800ae363ae7f8cf8c5bb2165a5bb0dc7caf8084",
+        "material_evidence_level_id_legend": "{\"0\": \"not_a_material\", \"1\": \"A_direct_human_breast_AFM\", \"2\": \"A_B_human_breast_fibrous_region\", \"3\": \"C_human_single_cell_proxy_not_region_measurement\", \"4\": \"C_D_directional_no_direct_human_breast_necrosis_modulus\", \"5\": \"A_B_direct_human_breast_small_strain\", \"6\": \"A_B_human_fibroglandular_proxy_for_parenchyma\", \"7\": \"C_D_directional_mouse_mammary_no_human_composite_modulus\", \"8\": \"unsupported_by_current_solid_solver\"}",
+        "material_mapping": "exact_fractional_native_pixel_area__voigt_with_void_zero",
+        "mechanics_available_policy": "remains_zero_until_cross-grid-domain-material-poisson-rotation_validation_passes",
+        "mesh_definition": "32_cells_per_visual_tile__224x224_cells",
+        "model_input_contract": "read only extraction_variants/strict_circle_center_mean/sed_roi; status and gate datasets are audit-only",
+        "patch_alignment": "{\"coordinate_relation\": \"patch_top_left_xy_plus_patch_size_src_over_2_equals_h5ad_spot_centre_xy\", \"maximum_centre_error_px\": 1.3788763541378646, \"mean_centre_error_px\": 0.7804393591348481}",
+        "patch_size_src": 164.0,
+        "patch_size_src_source": "img.attrs/patch_size_src",
+        "production_authorized_at_run": false,
+        "protocol_id": "fem_v5_q4_strict_native_circle_0p50_candidate_20260923",
+        "scenario_names": "[\"nominal\"]",
+        "segmentation_coverage_policy": "every_pixel_in_actual_FEM_domain_must_equal_1; sentinel_255_forbidden",
+        "segmentation_labels_sha256": "bd0e1a7cd86500ac436c31e31d1b5934fcc8fc7cb83ce7e755f45e1ff055ab1f",
+        "segmentation_model_revision": "03379365ea8267dbc0f738ee350695b3580d0a5e",
+        "segmentation_path": "/home/liuyu/FEM/CrowdsourcingDataset-Amgadetal2019/wsis/segmentation_outputs/tmeseg_breast_tcga_9class_modelscale_0p50_imagenet_20260923/masks/SPA124.h5",
+        "segmentation_protocol_config_sha256": "c34d9e133e62fd3db94605f8c6137c61144f01ec3960aaca0726770d1ddb032f",
+        "segmentation_protocol_id": "tmeseg_fem_roi_modelscale_0p50_imagenet_20260923",
+        "segmentation_source": "tmeseg_9class_modelscale_0p50_imagenet_20260923",
+        "source_mpp_authority": "OpenSlide level-0 metadata",
+        "source_mpp_x": 0.6893533283586971,
+        "source_mpp_y": 0.6893533283586971,
+        "source_wsi_path": "/home/liuyu/FEM/CrowdsourcingDataset-Amgadetal2019/wsis/SPA124.tif",
+        "source_wsi_sha256": "b973c652252dd916fc9feed1647af18bb407ded6defc5bc21eed5f3f3856be15",
+        "spot_diameter_level0_px": 146.37710023477206,
+        "status_codes": "{\"0\": \"solved_pending_cross_configuration_validation\", \"1\": \"input_contract_failure\", \"2\": \"no_biological_material_in_circular_spot\", \"3\": \"solver_or_numerical_qc_failure\"}",
+        "status_note": "candidate numerical solve only; not a production mechanics input",
+        "strain_amplitude": 0.01,
+        "strict_circle_gate": "native_level0_pixel_centres_before_coarse_FEM_grid; no_outside_circle_cell_leakage",
+        "topology_filter_policy": "Four-neighbour material components completely enclosed by a traction-free void cavity are excluded from the solid mesh; components contacting the exterior void or domain boundary are retained.",
+        "topology_filter_policy_id": "v3_edge_connected_material_components_v1",
+        "topology_filter_sha256": "2d1e0efcdc07dfdf6c01a50377be8dd42aba525c0fd4ec58b08a3525c7d5a709",
+        "triplex_patch_h5_path": "/home/liuyu/TRIPLEX/input/ST/andersson/patches/SPA124.h5",
+        "triplex_patch_h5_sha256": "f50e59f25374bc9a1258d93d5d32fd050b164ed3fc1596a2562b6f4897c025b7",
+        "validation_only": true,
+        "void_boundary_definition": "true_void_excluded; affine_KUBC_on_exterior_material_boundary; enclosed_hole_boundary_traction_free",
+        "zero_sed_policy": "status_code=2 strict-native-empty or status_code=3 numerical failure retains HDF5 zero fill; it is not a physical zero-SED solution"
+      },
+      "bounds": [
+        1995,
+        3195,
+        3143,
+        4343
+      ],
+      "center_xy": [
+        2569.85,
+        3769.88
+      ],
+      "center_local_xy": [
+        574.8499999999999,
+        574.8800000000001
+      ],
+      "diameter_px": 146.37710023477206,
+      "qc_metrics": {
+        "biological_fraction_in_spot": 0.967872522719705,
+        "candidate_numerical_qc_pass": true,
+        "cross_configuration_validation_pending": true,
+        "domain_is_geometrically_centred": true,
+        "rotation_equivariance_90deg_by_extraction_variant": {
+          "strict_circle_center_mean": {
+            "integrated_sed_relative_difference": 0.0,
+            "normalized_l1": 0.0,
+            "passes": true,
+            "spearman": 0.9999999999999999,
+            "top20_hotspot_dice": 1.0,
+            "valid_cells": 3184
+          },
+          "triplex_rect_full_domain_rank": {
+            "integrated_sed_relative_difference": 0.0,
+            "normalized_l1": 0.0,
+            "passes": true,
+            "spearman": 1.0,
+            "top20_hotspot_dice": 1.0,
+            "valid_cells": 4082
+          }
+        },
+        "rotation_equivariance_90deg_raw_sed_diagnostic": {
+          "integrated_sed_relative_difference": 7.496206587818849e-14,
+          "normalized_l1": 8.059358859575714e-14,
+          "spearman": 0.9999999999999999,
+          "top20_hotspot_dice": 1.0,
+          "valid_cells": 632
+        },
+        "scenarios": {
+          "nominal": {
+            "family": "nominal",
+            "loads": {
+              "xx": {
+                "energy_balance": 1.993957610940674e-13,
+                "fixed_dofs": 2716,
+                "internal_energy": 0.00013403285709348437,
+                "nodes": 45898,
+                "reaction_balance": 1.0315986433854869e-14,
+                "solver_residual": 3.405701182515012e-15,
+                "triangles": 0
+              },
+              "xy": {
+                "energy_balance": 3.4841329609330136e-13,
+                "fixed_dofs": 2716,
+                "internal_energy": 7.032730774892921e-05,
+                "nodes": 45898,
+                "reaction_balance": 1.194699846568035e-13,
+                "solver_residual": 5.620517434287572e-15,
+                "triangles": 0
+              },
+              "yy": {
+                "energy_balance": 6.401633961819587e-13,
+                "fixed_dofs": 2716,
+                "internal_energy": 0.00010121577197261037,
+                "nodes": 45898,
+                "reaction_balance": 3.183445242635506e-14,
+                "solver_residual": 3.681773812583004e-15,
+                "triangles": 0
+              }
+            },
+            "poisson_ratio": 0.49
+          }
+        }
+      },
+      "topology_cells_excluded": 272,
+      "native_classes": {
+        "0": "background",
+        "1": "tumor",
+        "2": "stroma",
+        "3": "inflam",
+        "4": "necrosis",
+        "5": "fat",
+        "6": "parenchyma",
+        "7": "blood_vessel",
+        "8": "blood"
+      },
+      "native_domain_segmentation_fraction": [
+        0.14781729169954716,
+        0.09560787432165013,
+        0.5580353348954097,
+        0.07621799463390354,
+        0.0,
+        0.12084643494518568,
+        0.0,
+        0.0014750695043038037,
+        0.0
+      ],
+      "raw_sed_nonfinite_cells": 0,
+      "raw_sed_finite_cells": 50176,
+      "native_circle_class_counts": [
+        533,
+        0,
+        4696,
+        5,
+        0,
+        11593,
+        0,
+        0,
+        0
+      ],
+      "native_circle_class_fraction": [
+        0.03167528377013134,
+        0.0,
+        0.2790752956557913,
+        0.00029714149878171987,
+        0.0,
+        0.6889522790752957,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "slide": "SPA119",
+      "spot": "014x034",
+      "candidate_path": "/home/liuyu/TRIPLEX/input/ST/andersson/mechanics_fem_center_first_context_fallback_candidate_20261001/SPA119.h5",
+      "candidate_row": 103,
+      "route": 1,
+      "reason": 1,
+      "source_h5": "/home/liuyu/TRIPLEX/input/ST/andersson/mechanics_fem_v6_context_failed_spots_candidate_20260929/tmeseg_9class_modelscale_0p50_imagenet_20260923/fem_v6_context_7x7_raw_sed_32cpt_candidate_20260929/domain_7x7/grid_32cpt/SPA119.h5",
+      "source_row": 0,
+      "formal_acceptance_pass": 0,
+      "mechanics_available": 0,
+      "prior_center_source_h5": "/home/liuyu/TRIPLEX/input/ST/andersson/mechanics_fem_v5_strict_circle_0p50_candidate_20260923/shards/SPA119_0096_0127/tmeseg_9class_modelscale_0p50_imagenet_20260923/tmeseg_dual_sed_extraction_v1_20260915/domain_7x7/grid_32cpt/SPA119.h5",
+      "prior_center_status": 2,
+      "prior_center_qc": 0,
+      "prior_center_qc_metrics": {
+        "error": "ValueError('Strict circular spot contains no biological FEM cells.')"
+      },
+      "attrs": {
+        "acceptance_field": "explicitly_selected_extraction_variant_sed_roi; raw_SED retained as physical-scale diagnostic",
+        "cells_per_tile": 32,
+        "complete": true,
+        "constitutive_model": "2D_small_strain_isotropic_linear_elastic_plane_stress_CST",
+        "context_extraction_protocol": "fem_v6_context_7x7_raw_sed_32cpt_candidate_20260929",
+        "context_field_scope": "same independent 7x7 Q4 solve domain for each spot; raw SED on retained load-connected solid cells; void zeros only at export",
+        "context_output_shape": "[1, 224, 224]",
+        "domain_definition": "7x7_TRIPLEX_visual_tiles_native_level0_no_resizing",
+        "domain_tiles": 7,
+        "edge_policy": "shift_full_native_domain_inside_WSI_without_padding_or_resizing; preserve actual spot centre and record domain offset",
+        "extraction_config_path": "/opt/data/private/users/liuyu/FEM/CrowdsourcingDataset-Amgadetal2019/tools/fem/fem_v6_context_extraction_7x7_32cpt_20260929.yaml",
+        "extraction_config_sha256": "8c4a1f3978c4430a86df76095f119eb3504c3f1f85fcf5c135037a56599268e9",
+        "extraction_output_size": 224,
+        "extraction_protocol_id": "fem_v6_context_7x7_raw_sed_32cpt_candidate_20260929",
+        "extraction_variant_names": "[\"context_7x7_raw_sed\"]",
+        "failure_count": 0,
+        "fem_core_sha256": "5ffd0f3a661ae24a4e72de0497dd3449a5e33bb0fd699777aa64ffca63e66bcb",
+        "fem_script_path": "/opt/data/private/users/liuyu/FEM/CrowdsourcingDataset-Amgadetal2019/tools/fem/run_fem_v6_context_failed_spots.py",
+        "fem_script_sha256": "08cf218dd8d07c84d3e984d4aa46da495589581a7fc644dff4434c22207e821a",
+        "fem_solution_reuse": false,
+        "h5ad_path": "/home/liuyu/TRIPLEX/input/ST/andersson/st/SPA119.h5ad",
+        "h5ad_sha256": "bf998349590a3459ca7ac62f59c6b60d474f62ea21f331071619593abca3f113",
+        "input_resampling": "none",
+        "load_basis": "[\"xx\", \"yy\", \"xy\"]",
+        "load_basis_equal_frobenius_norm": true,
+        "material_class_id_legend": "{\"0\": \"void_background\", \"1\": \"tumour_cell_rich\", \"2\": \"fibrous_stroma\", \"3\": \"mixed_inflammatory_infiltrate\", \"4\": \"tumour_necrosis_debris\", \"5\": \"breast_adipose\", \"6\": \"breast_parenchyma\", \"7\": \"vessel_composite\", \"8\": \"blood_fluid_unsupported\"}",
+        "material_config_path": "/opt/data/private/users/liuyu/FEM/CrowdsourcingDataset-Amgadetal2019/tools/fem/material_config_breast_tmeseg_v5_0p50_20260923.yaml",
+        "material_config_sha256": "344c83e16df1170b77ca3f1c9800ae363ae7f8cf8c5bb2165a5bb0dc7caf8084",
+        "material_evidence_level_id_legend": "{\"0\": \"not_a_material\", \"1\": \"A_direct_human_breast_AFM\", \"2\": \"A_B_human_breast_fibrous_region\", \"3\": \"C_human_single_cell_proxy_not_region_measurement\", \"4\": \"C_D_directional_no_direct_human_breast_necrosis_modulus\", \"5\": \"A_B_direct_human_breast_small_strain\", \"6\": \"A_B_human_fibroglandular_proxy_for_parenchyma\", \"7\": \"C_D_directional_mouse_mammary_no_human_composite_modulus\", \"8\": \"unsupported_by_current_solid_solver\"}",
+        "material_mapping": "exact_fractional_native_pixel_area__voigt_with_void_zero",
+        "mechanics_available_policy": "hard zero until all formal mesh-domain-material-poisson-rotation acceptance and authorization; this candidate is not model input",
+        "mesh_definition": "32_cells_per_visual_tile__224x224_cells",
+        "patch_alignment": "{\"coordinate_relation\": \"patch_top_left_xy_plus_patch_size_src_over_2_equals_h5ad_spot_centre_xy\", \"maximum_centre_error_px\": 0.693108938046236, \"mean_centre_error_px\": 0.38407453575658584}",
+        "patch_size_src": 163.0,
+        "patch_size_src_source": "img.attrs/patch_size_src",
+        "production_authorized_at_run": false,
+        "protocol_id": "fem_v6_context_failed_spots_q4_candidate_20260929",
+        "scenario_names": "[\"nominal\"]",
+        "segmentation_coverage_policy": "every_pixel_in_actual_FEM_domain_must_equal_1; sentinel_255_forbidden",
+        "segmentation_labels_sha256": "9700b72e11b8ff4b399a9783b76665aa99cc96cc667eb50032abf8d496b09fd5",
+        "segmentation_model_revision": "03379365ea8267dbc0f738ee350695b3580d0a5e",
+        "segmentation_path": "/home/liuyu/FEM/CrowdsourcingDataset-Amgadetal2019/wsis/segmentation_outputs/tmeseg_breast_tcga_9class_modelscale_0p50_imagenet_20260923/masks/SPA119.h5",
+        "segmentation_protocol_config_sha256": "c34d9e133e62fd3db94605f8c6137c61144f01ec3960aaca0726770d1ddb032f",
+        "segmentation_protocol_id": "tmeseg_fem_roi_modelscale_0p50_imagenet_20260923",
+        "segmentation_source": "tmeseg_9class_modelscale_0p50_imagenet_20260923",
+        "source_mpp_authority": "OpenSlide level-0 metadata",
+        "source_mpp_x": 0.6881798619144083,
+        "source_mpp_y": 0.6881798619144083,
+        "source_wsi_path": "/home/liuyu/FEM/CrowdsourcingDataset-Amgadetal2019/wsis/SPA119.tif",
+        "source_wsi_sha256": "bd9e9efd14569091436dae7f5640077229915c52c835467f776c7fcddac39ea9",
+        "spot_diameter_level0_px": 145.50968801903866,
+        "status_codes": "{\"0\": \"context_candidate_qc_pass\", \"1\": \"input_contract_failure\", \"2\": \"no_load_connected_solid_in_context_domain\", \"3\": \"solver_or_context_rotation_qc_failure\"}",
+        "status_note": "candidate numerical solve only; not a production mechanics input",
+        "strain_amplitude": 0.01,
+        "target_spot_status_policy": "The prior strict-circle status remains in prior_status; context status is independent and does not authorize centre-spot SED.",
+        "topology_policy": "Four-neighbour material components completely enclosed by a traction-free void cavity are excluded from the solid mesh; components contacting the exterior void or domain boundary are retained.",
+        "topology_policy_id": "v3_edge_connected_material_components_v1",
+        "triplex_patch_h5_path": "/home/liuyu/TRIPLEX/input/ST/andersson/patches/SPA119.h5",
+        "triplex_patch_h5_sha256": "2e3fd67765db67ea2916239ccb6a5e943a8f7189082ea4d90aaa2b7eb186b757",
+        "validation_only": true,
+        "void_boundary_definition": "true_void_excluded; affine_KUBC_on_exterior_material_boundary; enclosed_hole_boundary_traction_free"
+      },
+      "bounds": [
+        3222,
+        8748,
+        4363,
+        9889
+      ],
+      "center_xy": [
+        3793.42,
+        9601.93
+      ],
+      "center_local_xy": [
+        571.4200000000001,
+        853.9300000000003
+      ],
+      "diameter_px": 145.50968801903866,
+      "qc_metrics": {
+        "biological_fraction_in_spot": 0.2793143152100691,
+        "candidate_numerical_qc_pass": true,
+        "cross_configuration_validation_pending": true,
+        "domain_is_geometrically_centred": false,
+        "rotation_equivariance_90deg_by_extraction_variant": {
+          "context_7x7_raw_sed": {
+            "integrated_sed_relative_difference": 0.0,
+            "normalized_l1": 0.0,
+            "passes": true,
+            "spearman": 1.0,
+            "top20_hotspot_dice": 1.0,
+            "valid_cells": 15025
+          }
+        },
+        "rotation_equivariance_90deg_raw_sed_diagnostic": {
+          "integrated_sed_relative_difference": 2.4371866980499865e-16,
+          "normalized_l1": 5.688758635944309e-14,
+          "spearman": 0.999999999996462,
+          "top20_hotspot_dice": 1.0,
+          "valid_cells": 15025
+        },
+        "scenarios": {
+          "nominal": {
+            "family": "nominal",
+            "loads": {
+              "xx": {
+                "energy_balance": 9.716371862604016e-14,
+                "fixed_dofs": 4034,
+                "internal_energy": 1.3128682563854686e-05,
+                "nodes": 16112,
+                "reaction_balance": 2.199658868722591e-14,
+                "solver_residual": 1.6372185797088112e-15,
+                "triangles": 0
+              },
+              "xy": {
+                "energy_balance": 3.301498030181952e-13,
+                "fixed_dofs": 4034,
+                "internal_energy": 7.101585936341414e-06,
+                "nodes": 16112,
+                "reaction_balance": 5.492239530911598e-15,
+                "solver_residual": 2.4150122279408066e-15,
+                "triangles": 0
+              },
+              "yy": {
+                "energy_balance": 1.2710028170855694e-13,
+                "fixed_dofs": 4034,
+                "internal_energy": 1.3355234177921873e-05,
+                "nodes": 16112,
+                "reaction_balance": 3.1101556609460537e-15,
+                "solver_residual": 1.8742996331011887e-15,
+                "triangles": 0
+              }
+            },
+            "poisson_ratio": 0.49
+          }
+        }
+      },
+      "topology_cells_excluded": 0,
+      "native_classes": {
+        "0": "background",
+        "1": "tumor",
+        "2": "stroma",
+        "3": "inflam",
+        "4": "necrosis",
+        "5": "fat",
+        "6": "parenchyma",
+        "7": "blood_vessel",
+        "8": "blood"
+      },
+      "native_domain_segmentation_fraction": [
+        0.7206856847899309,
+        0.25698124482959656,
+        0.02109332573407247,
+        0.00036408857645207204,
+        0.0008272645502929992,
+        0.0,
+        4.839151965502223e-05,
+        0.0,
+        0.0
+      ],
+      "raw_sed_nonfinite_cells": 0,
+      "raw_sed_finite_cells": 50176,
+      "native_circle_class_counts": [
+        16635,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "native_circle_class_fraction": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "slide": "SPA124",
+      "spot": "003x016",
+      "candidate_path": "/home/liuyu/TRIPLEX/input/ST/andersson/mechanics_fem_center_first_context_fallback_candidate_20261001/SPA124.h5",
+      "candidate_row": 332,
+      "route": 1,
+      "reason": 2,
+      "source_h5": "/home/liuyu/TRIPLEX/input/ST/andersson/mechanics_fem_v6_context_failed_spots_candidate_20260929/tmeseg_9class_modelscale_0p50_imagenet_20260923/fem_v6_context_7x7_raw_sed_32cpt_candidate_20260929/domain_7x7/grid_32cpt/SPA124.h5",
+      "source_row": 0,
+      "formal_acceptance_pass": 0,
+      "mechanics_available": 0,
+      "prior_center_source_h5": "/home/liuyu/TRIPLEX/input/ST/andersson/mechanics_fem_v5_strict_circle_0p50_candidate_20260923/shards/SPA124_0320_0351/tmeseg_9class_modelscale_0p50_imagenet_20260923/tmeseg_dual_sed_extraction_v1_20260915/domain_7x7/grid_32cpt/SPA124.h5",
+      "prior_center_status": 2,
+      "prior_center_qc": 0,
+      "prior_center_qc_metrics": {
+        "error": "ValueError('Strict circular spot contains no biological FEM cells.')"
+      },
+      "attrs": {
+        "acceptance_field": "explicitly_selected_extraction_variant_sed_roi; raw_SED retained as physical-scale diagnostic",
+        "cells_per_tile": 32,
+        "complete": true,
+        "constitutive_model": "2D_small_strain_isotropic_linear_elastic_plane_stress_CST",
+        "context_extraction_protocol": "fem_v6_context_7x7_raw_sed_32cpt_candidate_20260929",
+        "context_field_scope": "same independent 7x7 Q4 solve domain for each spot; raw SED on retained load-connected solid cells; void zeros only at export",
+        "context_output_shape": "[1, 224, 224]",
+        "domain_definition": "7x7_TRIPLEX_visual_tiles_native_level0_no_resizing",
+        "domain_tiles": 7,
+        "edge_policy": "shift_full_native_domain_inside_WSI_without_padding_or_resizing; preserve actual spot centre and record domain offset",
+        "extraction_config_path": "/opt/data/private/users/liuyu/FEM/CrowdsourcingDataset-Amgadetal2019/tools/fem/fem_v6_context_extraction_7x7_32cpt_20260929.yaml",
+        "extraction_config_sha256": "8c4a1f3978c4430a86df76095f119eb3504c3f1f85fcf5c135037a56599268e9",
+        "extraction_output_size": 224,
+        "extraction_protocol_id": "fem_v6_context_7x7_raw_sed_32cpt_candidate_20260929",
+        "extraction_variant_names": "[\"context_7x7_raw_sed\"]",
+        "failure_count": 0,
+        "fem_core_sha256": "5ffd0f3a661ae24a4e72de0497dd3449a5e33bb0fd699777aa64ffca63e66bcb",
+        "fem_script_path": "/opt/data/private/users/liuyu/FEM/CrowdsourcingDataset-Amgadetal2019/tools/fem/run_fem_v6_context_failed_spots.py",
+        "fem_script_sha256": "08cf218dd8d07c84d3e984d4aa46da495589581a7fc644dff4434c22207e821a",
+        "fem_solution_reuse": false,
+        "h5ad_path": "/home/liuyu/TRIPLEX/input/ST/andersson/st/SPA124.h5ad",
+        "h5ad_sha256": "081f7be9ff8fa97e1cfc81cdf6f5c6b8ee1151b65aa2a24a61ddbc7fcb8e15d2",
+        "input_resampling": "none",
+        "load_basis": "[\"xx\", \"yy\", \"xy\"]",
+        "load_basis_equal_frobenius_norm": true,
+        "material_class_id_legend": "{\"0\": \"void_background\", \"1\": \"tumour_cell_rich\", \"2\": \"fibrous_stroma\", \"3\": \"mixed_inflammatory_infiltrate\", \"4\": \"tumour_necrosis_debris\", \"5\": \"breast_adipose\", \"6\": \"breast_parenchyma\", \"7\": \"vessel_composite\", \"8\": \"blood_fluid_unsupported\"}",
+        "material_config_path": "/opt/data/private/users/liuyu/FEM/CrowdsourcingDataset-Amgadetal2019/tools/fem/material_config_breast_tmeseg_v5_0p50_20260923.yaml",
+        "material_config_sha256": "344c83e16df1170b77ca3f1c9800ae363ae7f8cf8c5bb2165a5bb0dc7caf8084",
+        "material_evidence_level_id_legend": "{\"0\": \"not_a_material\", \"1\": \"A_direct_human_breast_AFM\", \"2\": \"A_B_human_breast_fibrous_region\", \"3\": \"C_human_single_cell_proxy_not_region_measurement\", \"4\": \"C_D_directional_no_direct_human_breast_necrosis_modulus\", \"5\": \"A_B_direct_human_breast_small_strain\", \"6\": \"A_B_human_fibroglandular_proxy_for_parenchyma\", \"7\": \"C_D_directional_mouse_mammary_no_human_composite_modulus\", \"8\": \"unsupported_by_current_solid_solver\"}",
+        "material_mapping": "exact_fractional_native_pixel_area__voigt_with_void_zero",
+        "mechanics_available_policy": "hard zero until all formal mesh-domain-material-poisson-rotation acceptance and authorization; this candidate is not model input",
+        "mesh_definition": "32_cells_per_visual_tile__224x224_cells",
+        "patch_alignment": "{\"coordinate_relation\": \"patch_top_left_xy_plus_patch_size_src_over_2_equals_h5ad_spot_centre_xy\", \"maximum_centre_error_px\": 1.3788763541378646, \"mean_centre_error_px\": 0.7804393591348481}",
+        "patch_size_src": 164.0,
+        "patch_size_src_source": "img.attrs/patch_size_src",
+        "production_authorized_at_run": false,
+        "protocol_id": "fem_v6_context_failed_spots_q4_candidate_20260929",
+        "scenario_names": "[\"nominal\"]",
+        "segmentation_coverage_policy": "every_pixel_in_actual_FEM_domain_must_equal_1; sentinel_255_forbidden",
+        "segmentation_labels_sha256": "bd0e1a7cd86500ac436c31e31d1b5934fcc8fc7cb83ce7e755f45e1ff055ab1f",
+        "segmentation_model_revision": "03379365ea8267dbc0f738ee350695b3580d0a5e",
+        "segmentation_path": "/home/liuyu/FEM/CrowdsourcingDataset-Amgadetal2019/wsis/segmentation_outputs/tmeseg_breast_tcga_9class_modelscale_0p50_imagenet_20260923/masks/SPA124.h5",
+        "segmentation_protocol_config_sha256": "c34d9e133e62fd3db94605f8c6137c61144f01ec3960aaca0726770d1ddb032f",
+        "segmentation_protocol_id": "tmeseg_fem_roi_modelscale_0p50_imagenet_20260923",
+        "segmentation_source": "tmeseg_9class_modelscale_0p50_imagenet_20260923",
+        "source_mpp_authority": "OpenSlide level-0 metadata",
+        "source_mpp_x": 0.6893533283586971,
+        "source_mpp_y": 0.6893533283586971,
+        "source_wsi_path": "/home/liuyu/FEM/CrowdsourcingDataset-Amgadetal2019/wsis/SPA124.tif",
+        "source_wsi_sha256": "b973c652252dd916fc9feed1647af18bb407ded6defc5bc21eed5f3f3856be15",
+        "spot_diameter_level0_px": 146.37710023477206,
+        "status_codes": "{\"0\": \"context_candidate_qc_pass\", \"1\": \"input_contract_failure\", \"2\": \"no_load_connected_solid_in_context_domain\", \"3\": \"solver_or_context_rotation_qc_failure\"}",
+        "status_note": "candidate numerical solve only; not a production mechanics input",
+        "strain_amplitude": 0.01,
+        "target_spot_status_policy": "The prior strict-circle status remains in prior_status; context status is independent and does not authorize centre-spot SED.",
+        "topology_policy": "Four-neighbour material components completely enclosed by a traction-free void cavity are excluded from the solid mesh; components contacting the exterior void or domain boundary are retained.",
+        "topology_policy_id": "v3_edge_connected_material_components_v1",
+        "triplex_patch_h5_path": "/home/liuyu/TRIPLEX/input/ST/andersson/patches/SPA124.h5",
+        "triplex_patch_h5_sha256": "f50e59f25374bc9a1258d93d5d32fd050b164ed3fc1596a2562b6f4897c025b7",
+        "validation_only": true,
+        "void_boundary_definition": "true_void_excluded; affine_KUBC_on_exterior_material_boundary; enclosed_hole_boundary_traction_free"
+      },
+      "bounds": [
+        0,
+        3790,
+        1148,
+        4938
+      ],
+      "center_xy": [
+        553.36,
+        4364.19
+      ],
+      "center_local_xy": [
+        553.36,
+        574.1899999999996
+      ],
+      "diameter_px": 146.37710023477206,
+      "qc_metrics": {
+        "biological_fraction_in_spot": 0.7713915429348419,
+        "candidate_numerical_qc_pass": true,
+        "cross_configuration_validation_pending": true,
+        "domain_is_geometrically_centred": false,
+        "rotation_equivariance_90deg_by_extraction_variant": {
+          "context_7x7_raw_sed": {
+            "integrated_sed_relative_difference": 1.2056199633487988e-12,
+            "normalized_l1": 1.205619999564597e-12,
+            "passes": true,
+            "spearman": 0.9999999999999999,
+            "top20_hotspot_dice": 1.0,
+            "valid_cells": 40386
+          }
+        },
+        "rotation_equivariance_90deg_raw_sed_diagnostic": {
+          "integrated_sed_relative_difference": 4.415112170616069e-16,
+          "normalized_l1": 1.3928076371396343e-13,
+          "spearman": 1.0,
+          "top20_hotspot_dice": 1.0,
+          "valid_cells": 40386
+        },
+        "scenarios": {
+          "nominal": {
+            "family": "nominal",
+            "loads": {
+              "xx": {
+                "energy_balance": 4.978993486881313e-13,
+                "fixed_dofs": 2160,
+                "internal_energy": 8.895303611608965e-05,
+                "nodes": 42035,
+                "reaction_balance": 5.784523465822249e-14,
+                "solver_residual": 3.818253413316184e-15,
+                "triangles": 0
+              },
+              "xy": {
+                "energy_balance": 5.738497023002597e-13,
+                "fixed_dofs": 2160,
+                "internal_energy": 5.247665934141804e-05,
+                "nodes": 42035,
+                "reaction_balance": 1.5597872386644558e-13,
+                "solver_residual": 6.394095802153194e-15,
+                "triangles": 0
+              },
+              "yy": {
+                "energy_balance": 7.690573786824081e-13,
+                "fixed_dofs": 2160,
+                "internal_energy": 8.455159146411496e-05,
+                "nodes": 42035,
+                "reaction_balance": 1.443253113375207e-13,
+                "solver_residual": 3.878839407496347e-15,
+                "triangles": 0
+              }
+            },
+            "poisson_ratio": 0.49
+          }
+        }
+      },
+      "topology_cells_excluded": 856,
+      "native_classes": {
+        "0": "background",
+        "1": "tumor",
+        "2": "stroma",
+        "3": "inflam",
+        "4": "necrosis",
+        "5": "fat",
+        "6": "parenchyma",
+        "7": "blood_vessel",
+        "8": "blood"
+      },
+      "native_domain_segmentation_fraction": [
+        0.21565076060168267,
+        0.15099810001335454,
+        0.48561048452694583,
+        0.014051858101955833,
+        0.0010896089548252377,
+        0.13170989692724205,
+        0.0,
+        0.0008892908739938569,
+        0.0
+      ],
+      "raw_sed_nonfinite_cells": 0,
+      "raw_sed_finite_cells": 50176,
+      "native_circle_class_counts": [
+        9472,
+        2588,
+        4408,
+        0,
+        0,
+        323,
+        0,
+        41,
+        0
+      ],
+      "native_circle_class_fraction": [
+        0.5627376425855514,
+        0.15375475285171103,
+        0.26188212927756654,
+        0.0,
+        0.0,
+        0.01918963878326996,
+        0.0,
+        0.0024358365019011407,
+        0.0
+      ]
+    }
+  ],
+  "raw_sed_color_scale": {
+    "type": "log",
+    "minimum": 9.99999993922529e-09,
+    "maximum": 0.10000000149011612,
+    "unit": "kPa"
+  },
+  "archive_sha256": "81a6cc1f79db7048f0741576d145c35451914174d3a10f438b9ca70c8038ebff"
+}

@@ -1,0 +1,176 @@
+{
+  "grid": {
+    "states": {
+      "both_mechanics_unavailable": 4530,
+      "both_mechanics_available": 9031,
+      "availability_mismatch": 51
+    },
+    "jointly_available_pass": 0,
+    "jointly_available_count": 9031,
+    "all_spots_pass": false,
+    "gates": {
+      "comparison_domain": "same strict circular centre-spot footprint",
+      "acceptance_field": "dimensionless_sed_roi_used_by_model",
+      "min_spearman": 0.98,
+      "max_normalized_l1": 0.05,
+      "max_integrated_sed_relative_difference": 0.05,
+      "min_top20_hotspot_dice": 0.9,
+      "failure_action": "mechanics_available=0; retain visual prediction; force mechanics residual to zero"
+    }
+  },
+  "sensitivity": [
+    {
+      "stage": "07_material_micro_afm_tumour_stroma",
+      "status": "completed_pending_interpretation",
+      "total": 227,
+      "counts": {
+        "completed": 227
+      },
+      "started_at": "2026-09-20T12:45:24+0800",
+      "ended_at": "2026-09-22T07:04:00+0800"
+    },
+    {
+      "stage": "08_material_immune_proxy",
+      "status": "running",
+      "total": 227,
+      "counts": {
+        "completed": 29
+      },
+      "started_at": "2026-09-22T07:04:00+0800",
+      "ended_at": null
+    }
+  ],
+  "training": [
+    {
+      "name": "TRIPLEX_SED1_CENTER_ATTN_RECT_Q4_32CPT_EXPLORATORY_20260920",
+      "folds": [
+        {
+          "fold": "fold0",
+          "test_PearsonCorrCoef": 0.46873873472213745,
+          "test_MeanAbsoluteError": 0.47534191608428955,
+          "test_MeanSquaredError": 0.4203134775161743
+        },
+        {
+          "fold": "fold1",
+          "test_PearsonCorrCoef": 0.36319035291671753,
+          "test_MeanAbsoluteError": 0.40275058150291443,
+          "test_MeanSquaredError": 0.2850375771522522
+        },
+        {
+          "fold": "fold2",
+          "test_PearsonCorrCoef": 0.5497281551361084,
+          "test_MeanAbsoluteError": 0.5555093884468079,
+          "test_MeanSquaredError": 0.5527865886688232
+        },
+        {
+          "fold": "fold3",
+          "test_PearsonCorrCoef": 0.3832002282142639,
+          "test_MeanAbsoluteError": 0.39296838641166687,
+          "test_MeanSquaredError": 0.278029203414917
+        },
+        {
+          "fold": "fold4",
+          "test_PearsonCorrCoef": 0.474905401468277,
+          "test_MeanAbsoluteError": 0.4546806514263153,
+          "test_MeanSquaredError": 0.36701831221580505
+        },
+        {
+          "fold": "fold5",
+          "test_PearsonCorrCoef": 0.47374674677848816,
+          "test_MeanAbsoluteError": 0.4006190001964569,
+          "test_MeanSquaredError": 0.2813746929168701
+        },
+        {
+          "fold": "fold6",
+          "test_PearsonCorrCoef": 0.35067152976989746,
+          "test_MeanAbsoluteError": 0.4537505805492401,
+          "test_MeanSquaredError": 0.3536323308944702
+        },
+        {
+          "fold": "fold7",
+          "test_PearsonCorrCoef": 0.4354017376899719,
+          "test_MeanAbsoluteError": 0.3442018926143646,
+          "test_MeanSquaredError": 0.20353394746780396
+        }
+      ],
+      "mean": {
+        "test_PearsonCorrCoef": 0.4374478608369827,
+        "test_MeanAbsoluteError": 0.43497779965400696,
+        "test_MeanSquaredError": 0.3427157662808895
+      }
+    },
+    {
+      "name": "TRIPLEX_SED1_CENTER_ATTN_CIRCLE_Q4_32CPT_EXPLORATORY_20260920",
+      "folds": [
+        {
+          "fold": "fold0",
+          "test_PearsonCorrCoef": 0.4693348705768585,
+          "test_MeanAbsoluteError": 0.4745817184448242,
+          "test_MeanSquaredError": 0.41874465346336365
+        },
+        {
+          "fold": "fold1",
+          "test_PearsonCorrCoef": 0.3637288510799408,
+          "test_MeanAbsoluteError": 0.4025444984436035,
+          "test_MeanSquaredError": 0.2850504517555237
+        },
+        {
+          "fold": "fold2",
+          "test_PearsonCorrCoef": 0.5494363307952881,
+          "test_MeanAbsoluteError": 0.5575557351112366,
+          "test_MeanSquaredError": 0.556638777256012
+        },
+        {
+          "fold": "fold3",
+          "test_PearsonCorrCoef": 0.3834162950515747,
+          "test_MeanAbsoluteError": 0.39363086223602295,
+          "test_MeanSquaredError": 0.27923691272735596
+        },
+        {
+          "fold": "fold4",
+          "test_PearsonCorrCoef": 0.4759317934513092,
+          "test_MeanAbsoluteError": 0.4537283778190613,
+          "test_MeanSquaredError": 0.3657732307910919
+        },
+        {
+          "fold": "fold5",
+          "test_PearsonCorrCoef": 0.4739900529384613,
+          "test_MeanAbsoluteError": 0.40001916885375977,
+          "test_MeanSquaredError": 0.2799821197986603
+        },
+        {
+          "fold": "fold6",
+          "test_PearsonCorrCoef": 0.3502464294433594,
+          "test_MeanAbsoluteError": 0.4531911611557007,
+          "test_MeanSquaredError": 0.3520479202270508
+        },
+        {
+          "fold": "fold7",
+          "test_PearsonCorrCoef": 0.4348832964897156,
+          "test_MeanAbsoluteError": 0.34294837713241577,
+          "test_MeanSquaredError": 0.20208869874477386
+        }
+      ],
+      "mean": {
+        "test_PearsonCorrCoef": 0.43762098997831345,
+        "test_MeanAbsoluteError": 0.4347749873995781,
+        "test_MeanSquaredError": 0.342445345595479
+      }
+    }
+  ],
+  "audit_date": "2026-09-22",
+  "h5_all_files_scan": {
+    "files": 227,
+    "slides": 36,
+    "spots": 13612,
+    "status_counts": {
+      "0": 9056,
+      "2": 4554,
+      "3": 2
+    },
+    "all_zero_rect_status2": 4554,
+    "all_zero_circle_status2": 4554,
+    "status2_fraction": 0.33455774316779313
+  },
+  "report_sha256": "23843011e8c2e2535bed0cd6e3d3e18721a595e743530ca400a9442ebad35546"
+}

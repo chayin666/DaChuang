@@ -1,0 +1,106 @@
+[
+  {
+    "source": "教师侧原始归档：case_1_SPA119_010x016.png（原文件未随包提供）",
+    "copy": "素材/01_组织分割与有限元候选场_主稿.png",
+    "sha256": "4a8279e5f6b2acf494381a61b6df451728eca670f2f7db94f1ce0bc19f4b05b9",
+    "use": "主稿第5页",
+    "original_unchanged": true
+  },
+  {
+    "source": "教师侧原始归档：case_2_SPA124_010x014.png（原文件未随包提供）",
+    "copy": "素材/02_脂肪间质案例_备份.png",
+    "sha256": "80656393fffd77c8ee61204343d479d889e10deefb28014aa13d31fdd1933b4b",
+    "use": "备份病例",
+    "original_unchanged": true
+  },
+  {
+    "source": "教师侧原始归档：case_3_SPA119_014x034.png（原文件未随包提供）",
+    "copy": "素材/03_分割异常与周围回退_问题分析.png",
+    "sha256": "af8c91afba4caeee94cfc8cb3d6bded0e71cba8f3bb047d1755e0ebeb0829147",
+    "use": "主稿第9页或备份",
+    "original_unchanged": true
+  },
+  {
+    "source": "教师侧原始归档：案例说明.md（原文件未随包提供）",
+    "copy": "素材/来源说明_20261007.md",
+    "sha256": "a7c94a1e50f6a35934b3f09ed96135c41b52afb79ab043cb5214cb598f95bacf",
+    "use": "图像解释和适用范围",
+    "original_unchanged": true
+  },
+  {
+    "source": "教师侧原始归档：case_manifest.json（原文件未随包提供）",
+    "copy": "素材/案例原始记录_20261007.json",
+    "sha256": "d5af176d9a48b62b47cbd21ba7d6124086d721ba04e82a1abc8f4d4b4e2ffc2a",
+    "use": "图像来源与计算字段",
+    "original_unchanged": true
+  },
+  {
+    "source": "教师侧原始归档：服务器核查摘要_20260922.json（原文件未随包提供）",
+    "copy": "素材/八折结果与数据核查快照_20260922.json",
+    "sha256": "02f2902fc55b6513949e0482f9129f328b7a457e9f51bb07c92426795eea1708",
+    "use": "历史实验逐折指标",
+    "original_unchanged": true
+  },
+  {
+    "source": "教师侧原始归档：8.24-9.1.docx（原文件未随包提供）",
+    "copy": "素材/04_三模型分割对比_原始图.png",
+    "kind": "embedded_image",
+    "source_sha256": "a6e35c45e82226d225115a7742b60c190758f7ab839fb9db1e0cbe54d13ec57f",
+    "sha256": "a8a3e2eb476ce7729573c4cd5a00b20a2820c1216fc8c2f538c5e7ed18ff2a3a",
+    "use": "主稿第4页或备份",
+    "source_member": "word/media/image1.png",
+    "member_sha256": "a8a3e2eb476ce7729573c4cd5a00b20a2820c1216fc8c2f538c5e7ed18ff2a3a"
+  },
+  {
+    "source": "教师侧原始归档：scan3_output.txt（原文件未随包提供）",
+    "copy": "素材/TRIPLEX分支消融_归档报告摘录.md",
+    "kind": "exact_section",
+    "source_sha256": "8512e5cd2e5d1761e9b9901cb239026313c6a6eddeaef2a75ba9c90439a8ad4f",
+    "sha256": "7d886aef86f1eabb83314969a7026054b17d63edc246e27f016602d484a21a74",
+    "use": "分支消融原始报告摘录",
+    "source_section": "########## reports/TRIPLEX_branch_ablation_vs_baseline.md ##########",
+    "archive_date": "2026-10-07"
+  },
+  {
+    "source": "教师侧原始归档：scan2_output.txt（原文件未随包提供）",
+    "copy": "素材/基线与变体逐折结果_20261007归档.txt",
+    "kind": "exact_section",
+    "source_sha256": "ff982c6016f24d8aa40bfe8b9687d478de2d00ebe0c19ba312a3b9ca5b2b25ec",
+    "sha256": "28f239d50c0285006a8048d7c34233f57594bb0e5e8574707b15ed9fdd248e43",
+    "use": "对比实验规模及逐折PCC来源",
+    "source_section": "VISUAL_ABLATION_EVAL_MEANS",
+    "archive_date": "2026-10-07"
+  },
+  {
+    "source": "教师侧原始归档：scan2_output.txt（原文件未随包提供）",
+    "copy": "素材/TRIPLEX基线及变体_九组八折指标.csv",
+    "kind": "transcribed_table",
+    "source_sha256": "ff982c6016f24d8aa40bfe8b9687d478de2d00ebe0c19ba312a3b9ca5b2b25ec",
+    "sha256": "b55c32ac09a3eaa2225e4e9fc1b674fc5012c56d89ed3eee56689e7447e0c1ff",
+    "use": "可编辑历史对比实验指标"
+  },
+  {
+    "source": "教师侧原始归档：scan2_output.txt（原文件未随包提供）",
+    "copy": "素材/TRIPLEX主稿_四组八折指标.csv",
+    "kind": "transcribed_table",
+    "source_sha256": "ff982c6016f24d8aa40bfe8b9687d478de2d00ebe0c19ba312a3b9ca5b2b25ec",
+    "sha256": "8f407a710f204d1b663b3e93dab841a00fc4cdc4a8782c04c1b2d4c923dec50f",
+    "use": "主稿第6页"
+  },
+  {
+    "source": "教师侧原始归档：8.24-9.1.docx（原文件未随包提供）",
+    "copy": "素材/三模型分割对比_单区域指标.csv",
+    "kind": "transcribed_table",
+    "source_sha256": "a6e35c45e82226d225115a7742b60c190758f7ab839fb9db1e0cbe54d13ec57f",
+    "sha256": "52f3cec5f0ddf06700dd6b606b2f6a29b711877060538887fafd965ca05a632b",
+    "use": "主稿第6页三模型单区域结果"
+  },
+  {
+    "source": "教师侧原始归档：8.31-9.5_上周工作周报.docx（原文件未随包提供）",
+    "copy": "素材/两套分割来源_FEM网格检查_历史结果.csv",
+    "kind": "transcribed_table",
+    "source_sha256": "b8dd5903bf77776f7aeb9528ffdcb77a52a325e581e1f81ec0092cdfc1097a03",
+    "sha256": "d5d5632fa87c93f2c1f010d66ad476e319bdefcf2eff101d2133afab129a0186",
+    "use": "备份页共享ROI工程实验规模"
+  }
+]
